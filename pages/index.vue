@@ -69,7 +69,10 @@
         this.$initWebflow()
       })
       this.$nuxt.$emit('update-locomotive')
-      // this.$initScrolltrigger(this.$refs.scroller.locomotive)
+    },
+
+    updated() {
+       this.$initScrolltrigger(this.$refs.scroller.locomotive)
     },
 
     methods: {
