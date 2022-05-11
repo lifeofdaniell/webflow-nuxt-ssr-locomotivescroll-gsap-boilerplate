@@ -1,29 +1,31 @@
 <template>
-  <LocomotiveScroll
-    ref="scroller"
-    :getted-options="{
-      direction: 'vertical',
-      smooth: true,
-      getSpeed: true,
-      multiplier: 0.5,
-      lerp: 0.1,
-      smartphone: {
-        smooth: false
-      },
-      tablet: {
-        smooth: true
-      }
-    }">
-    <div class="welcome">
-      Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
-    </div>
-    <div class="welcome">
-      Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
-    </div>
-    <div class="welcome">
-      Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
-    </div>
-  </LocomotiveScroll>
+  <client-only>
+    <LocomotiveScroll
+      ref="scroller"
+      :getted-options="{
+        direction: 'vertical',
+        smooth: true,
+        getSpeed: true,
+        multiplier: 0.5,
+        lerp: 0.1,
+        smartphone: {
+          smooth: false
+        },
+        tablet: {
+          smooth: true
+        }
+      }">
+      <div class="welcome">
+        Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
+      </div>
+      <div class="welcome">
+        Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
+      </div>
+      <div class="welcome">
+        Webflow x NuxtSSR x LocomotiveScroll x GSAP Boilerplate
+      </div>
+    </LocomotiveScroll>
+  </client-only>
 </template>
 
 <script>
@@ -67,7 +69,7 @@
         this.$initWebflow()
       })
       this.$nuxt.$emit('update-locomotive')
-      this.$initScrolltrigger(this.$refs.scroller.locomotive)
+      // this.$initScrolltrigger(this.$refs.scroller.locomotive)
     },
 
     methods: {
