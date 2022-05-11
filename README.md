@@ -1,4 +1,4 @@
-# vumele-customer
+# webflow-nuxt-ssr-locomotivescroll-gsap-boilerplate
 
 ## Build Setup
 
