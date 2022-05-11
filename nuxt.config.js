@@ -14,7 +14,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nuxt SSR Boilerplate',
+    title: 'Nuxt SSR LocomotiveScroll GSAP Boilerplate',
     meta: [...metaUtils()],
     link: [...linkUtils()],
     script: [...scriptUtils()]
@@ -28,6 +28,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/both.client',
+    '@/plugins/client.client',
     '@/plugins/mixins',
     '@/plugins/prototypes',
     '@/plugins/axios',
@@ -45,7 +47,6 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module'
   ],
-
 
   generate: {
     fallback: true
@@ -72,5 +73,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['gsap']
   }
 }

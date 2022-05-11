@@ -1,6 +1,6 @@
 // PWA properties
-const name = 'Nuxt SSR'
-const shortName = 'Nuxt SSR'
+const name = 'Nuxt SSR LocomotiveScroll GSAP Boilerplate'
+const shortName = 'Nuxt SSR LocomotiveScroll GSAP'
 const description = ''
 
 export const getManifest = (manifest) => {
