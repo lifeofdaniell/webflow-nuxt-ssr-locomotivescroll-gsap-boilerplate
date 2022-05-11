@@ -5,9 +5,10 @@
       direction: 'vertical',
       smooth: true,
       getSpeed: true,
-      lerp: 0.075,
+      multiplier: 0.5,
+      lerp: 0.1,
       smartphone: {
-        smooth: true
+        smooth: false
       },
       tablet: {
         smooth: true
