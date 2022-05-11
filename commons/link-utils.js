@@ -21,7 +21,7 @@ export default () => {
     },
     {
       rel: 'stylesheet',
-      href: '/assets/css/vumele.css'
+      href: '/assets/css/website.css'
     }, */
     {
       rel: 'stylesheet',

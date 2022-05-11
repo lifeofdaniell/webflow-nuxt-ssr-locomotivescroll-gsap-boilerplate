@@ -12,7 +12,7 @@ export default () => {
       type: 'text/javascript'
     },
   /*   {
-      src: '/js/vumele.js',
+      src: '/js/website.js',
       type: 'text/javascript',
       body: 'true'
     } */
